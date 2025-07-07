@@ -20,4 +20,5 @@ Software Developer – building scalable, functional applications that rely on c
 I am fascinated by how data can drive innovation, and how it intersects with technologies like AI, cybersecurity, facial recognition, neural interfaces, and smart devices. Whether it's through analytics or development, I want to be part of shaping the future of technology in ethical, meaningful ways.
 Even outside the cloud domain, I see immense value in the skills I’ve learned—especially in areas like data handling, encryption, and application development—as foundational to my broader goals. My vision is to work in environments that use data to make a difference in industries such as healthcare, education, transport, or even tech-for-good start-ups.
 
+
 ![Image](https://github.com/user-attachments/assets/ca05594a-6e52-4f2c-88ad-4a6e5b3069c3)
