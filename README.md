@@ -1,4 +1,4 @@
- # aw-restart-journey
+ # aws-restart-journey
 
 🔹 Personal Bio – Polelo Ramokhele
 
