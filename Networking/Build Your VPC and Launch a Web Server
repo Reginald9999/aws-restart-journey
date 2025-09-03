@@ -16,8 +16,8 @@ This lab takes approximately **45 minutes** to complete.
 ---
 
 ## 📌 Scenario
-You are working for a Fortune 100 customer that requires a secure and scalable network setup in AWS.  
-In this lab, you will build a custom **Amazon VPC** with multiple subnets, configure routing, and launch a web server on **Amazon EC2**.  
+I am working for a Fortune 100 customer that requires a secure and scalable network setup in AWS.  
+In this lab, I will build a custom **Amazon VPC** with multiple subnets, configure routing, and launch a web server on **Amazon EC2**.  
 
 The final architecture will include:
 
