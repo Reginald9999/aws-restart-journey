@@ -1,4 +1,4 @@
- # aws-restart-journey
+ # AWS-Restart-Journey
 
 I recently completed the AWS re/Start Practitioner Program, which is a full-time, skills-development and career training initiative by Amazon Web Services. The program gave me a solid foundation in cloud computing along with hands-on experience using core AWS services.
 
