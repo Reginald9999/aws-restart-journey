@@ -24,3 +24,5 @@ I recently completed the AWS re/Start Practitioner Program, which is a full-time
 
 •Job readiness for entry-level cloud roles like Cloud Support Associate, Cloud Operations, or IT Support with cloud skills
 
+##
+
