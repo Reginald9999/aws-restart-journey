@@ -30,6 +30,8 @@ The final architecture will include:
 - 1 Security Group (allowing HTTP access)
 - 1 EC2 instance running Apache Web Server
 
+![architecture diagram](Images/N-images-/lab-1/Screenshot (1844).png)
+
 ---
 
 ## 🛠️ Tasks
