@@ -55,6 +55,17 @@ The final architecture will include:
 - Add **Private Subnet 2** (`10.0.3.0/24`)
 - Associate subnets with route tables
 
+  ![image alt](https://github.com/Reginald9999/aws-restart-journey/blob/02e5df5caf84e1b3cf64c7aa652db92bcf5e4d8f/Images/N-images-/lab-1/Screenshot%20(1852).png)
+  ![image alt](https://github.com/Reginald9999/aws-restart-journey/blob/02e5df5caf84e1b3cf64c7aa652db92bcf5e4d8f/Images/N-images-/lab-1/Screenshot%20(1853).png)
+  ![image alt](https://github.com/Reginald9999/aws-restart-journey/blob/02e5df5caf84e1b3cf64c7aa652db92bcf5e4d8f/Images/N-images-/lab-1/Screenshot%20(1854).png)
+  ![image alt](https://github.com/Reginald9999/aws-restart-journey/blob/02e5df5caf84e1b3cf64c7aa652db92bcf5e4d8f/Images/N-images-/lab-1/Screenshot%20(1855).png)
+  ![image alt](https://github.com/Reginald9999/aws-restart-journey/blob/02e5df5caf84e1b3cf64c7aa652db92bcf5e4d8f/Images/N-images-/lab-1/Screenshot%20(1856).png)
+  ![image alt](https://github.com/Reginald9999/aws-restart-journey/blob/02e5df5caf84e1b3cf64c7aa652db92bcf5e4d8f/Images/N-images-/lab-1/Screenshot%20(1857).png)
+  ![image alt](https://github.com/Reginald9999/aws-restart-journey/blob/02e5df5caf84e1b3cf64c7aa652db92bcf5e4d8f/Images/N-images-/lab-1/Screenshot%20(1858).png)
+  ![image alt](https://github.com/Reginald9999/aws-restart-journey/blob/02e5df5caf84e1b3cf64c7aa652db92bcf5e4d8f/Images/N-images-/lab-1/Screenshot%20(1859).png)
+  ![image alt](https://github.com/Reginald9999/aws-restart-journey/blob/02e5df5caf84e1b3cf64c7aa652db92bcf5e4d8f/Images/N-images-/lab-1/Screenshot%20(1860).png)
+
+
 ### **Task 3: Configure route tables**
 - Associate **Public Subnet 2** with Public Route Table
 - Associate **Private Subnet 2** with Private Route Table
