@@ -30,7 +30,7 @@ The final architecture will include:
 - 1 Security Group (allowing HTTP access)
 - 1 EC2 instance running Apache Web Server
 
-![architecture diagram](Images/N-images-/lab-1/Screenshot (1844).png)
+![architecture diagram](https://github.com/Reginald9999/aws-restart-journey/blob/main/Images/N-images-/lab-1/Screenshot%20(1844).png?raw=true)
 
 ---
 
