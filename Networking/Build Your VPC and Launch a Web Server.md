@@ -43,6 +43,12 @@ The final architecture will include:
 - Attach **Internet Gateway**
 - Add **NAT Gateway** for private subnet
 - Configure route tables (Public & Private)
+![image alt](https://github.com/Reginald9999/aws-restart-journey/blob/431841f700a325cc79c5cd8f1fad77f0ad1b46f2/Images/N-images-/lab-1/Screenshot%20(1847).png)
+![image alt](https://github.com/Reginald9999/aws-restart-journey/blob/431841f700a325cc79c5cd8f1fad77f0ad1b46f2/Images/N-images-/lab-1/Screenshot%20(1848).png)
+![image alt](https://github.com/Reginald9999/aws-restart-journey/blob/431841f700a325cc79c5cd8f1fad77f0ad1b46f2/Images/N-images-/lab-1/Screenshot%20(1849).png)
+![image alt](https://github.com/Reginald9999/aws-restart-journey/blob/431841f700a325cc79c5cd8f1fad77f0ad1b46f2/Images/N-images-/lab-1/Screenshot%20(1851).png)
+
+
 
 ### **Task 2: Create additional subnets**
 - Add **Public Subnet 2** (`10.0.2.0/24`)
