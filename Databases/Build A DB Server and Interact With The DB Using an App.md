@@ -1,6 +1,6 @@
 # 🏗️ Build Your DB Server and Interact With Your DB Using an App
 
-This project demonstrates how I built and connected a **web application** to an **Amazon RDS MySQL database** using AWS-managed services.
+This project demonstrates how I built and connected a **web application** to an **Amazon RDS MySQL database** using AWS-managed services..
 
 It follows the lab **“Build Your DB Server and Interact With Your DB Using an App”**, designed to reinforce using AWS-managed relational databases in a secure, scalable environment.
 
