@@ -1,1 +1,99 @@
+�
+�
+ ️ Build Your DB Server and Interact With Your DB Using an App 
+
+This project demonstrates how I built and connected a web application to an Amazon RDS 
+MySQL database using AWS-managed services. 
+It follows the lab “Build Your DB Server and Interact With Your DB Using an App”, designed 
+to reinforce using AWS-managed relational databases in a secure, scalable environment. 
+
+�
+� Objectives 
+• Launch a Multi-AZ Amazon RDS DB instance with high availability 
+• Configure network access using Security Groups 
+• Create a DB Subnet Group to define private subnets 
+• Connect a web server application to the RDS instance 
+• Interact with the database via a live web interface 
+
+☁AWS Services Used 
+• Amazon RDS – MySQL Database (Multi-AZ) 
+• Amazon VPC – Network and Subnet Management 
+• Amazon EC2 – Web Application Server 
+• AWS Identity and Access Management (IAM) – Role-based access 
+• Security Groups – Traffic control between EC2 and RDS 
+
+�
+� Steps I Took 
+Task 1: Create a Security Group for the RDS DB Instance 
+• Opened VPC in the AWS Console. 
+• Created a new security group named DB Security Group. 
+• Added a description: “Permit access from Web Security Group.” 
+• Selected Lab VPC as the network. 
+• Added an inbound rule: - 
+       Type: MySQL/Aurora (3306) 
+      - - 
+       Source: Web Security Group 
+       Clicked Create Security Group. 
+
+Task 2: Create a DB Subnet Group 
+• Navigated to RDS → Subnet Groups. 
+• Clicked Create DB Subnet Group and named it DB Subnet Group. 
+• Selected Lab VPC. 
+• Added two Availability Zones and their respective subnets: - 
+       10.0.1.0/24 (Private Subnet 1) - 
+       10.0.3.0/24 (Private Subnet 2) 
+• Clicked Create. 
+
+Task 3: Create a Multi-AZ Amazon RDS DB Instance 
+• Navigated to RDS → Databases → Create Database. 
+• Chose Standard Create → MySQL → Dev/Test template. 
+• Set Multi-AZ DB Instance for high availability. 
+Configured: - - - - - 
+       DB Instance Identifier: lab-db 
+       Master Username: main 
+       Password: lab-password 
+       Selected instance class db.t3.medium. 
+       Set Storage Type: General Purpose (SSD). 
+• Under Connectivity: - 
+      Selected Lab VPC - - - - 
+      Used existing DB Security Group 
+      Disabled Enhanced Monitoring and Automated Backups (for lab speed). 
+      Set Initial Database Name: lab. 
+      Clicked Create Database. 
+• Waited until the instance status became Available. 
+• Copied the Endpoint from the Connectivity & Security section for later use. 
+
+Task 4: Interact With the Database Using the Web App 
+• Copied the Web Server IP Address from AWS Details. 
+• Opened it in a new browser tab — web app loaded successfully. 
+• Clicked the RDS link in the app’s menu. 
+• Entered the database connection info: - 
+     Endpoint: (from RDS) - - - - 
+     Database: lab 
+     Username: main 
+     Password: lab-password 
+     Clicked Submit. 
+• Verified the Address Book app loaded and stored contact data in the RDS instance. 
+• Tested CRUD operations (add, edit, delete). 
+• Confirmed the data persisted and replicated across Availability Zones. 
+
+✅ Results 
+• Successfully launched a highly available MySQL database on Amazon RDS. 
+• Configured secure connectivity between the web app and the database. 
+• Demonstrated real-time data storage, retrieval, and replication using AWS-managed 
+infrastructure. 
+
+�
+� Key Takeaways 
+• AWS RDS simplifies relational database deployment and scaling. 
+• Multi-AZ architecture ensures fault tolerance and high availability. 
+• Security Groups and Subnet Groups enforce proper isolation and access control. 
+• Applications can seamlessly integrate with managed databases using standard 
+connection parameters. 
+
+�
+� Next Steps 
+• Enable Automated Backups for production use. 
+• Add CloudWatch Alarms for monitoring database performance. 
+• Integrate AWS Secrets Manager to securely manage credentials. 
 
