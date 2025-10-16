@@ -1,1 +1,74 @@
+Amazon EBS Lab: Volume Management and Snapshots
 
+Overview 
+This lab demonstrates how to use Amazon Elastic Block Store (EBS) with EC2 instances to 
+provide scalable, high-performance block storage. You learned how to create, attach, 
+mount, snapshot, and restore EBS volumes. 
+
+Architecture Workflow: 
+1. Create a new EBS volume. 
+2. Attach the volume to an EC2 instance. 
+3. Format and mount the volume on the instance. 
+4. Create a snapshot of the volume. 
+5. Restore a new volume from the snapshot and reattach it to the instance. 
+
+Objectives 
+By the end of this lab, you can: 
+• Create an EBS volume. 
+• Attach and mount an EBS volume to an EC2 instance. 
+• Create a snapshot of an EBS volume. 
+• Restore an EBS volume from a snapshot. 
+
+Steps Taken 
+Task 1 — Creating a New EBS Volume 
+• Created a 1 GiB General Purpose SSD (gp2) volume in the same Availability Zone as 
+the EC2 instance (us-west-2a). 
+• Added a tag: Name = My Volume. 
+
+Task 2 — Attaching the Volume 
+• Attached My Volume to the EC2 instance using device /dev/sdb. 
+• Verified volume status: In-use. 
+
+Task 3 — Connecting to the EC2 Instance 
+• Used EC2 Instance Connect to open a terminal session on the instance. 
+
+Task 4 — Creating and Configuring the File System 
+• Created an ext3 filesystem: 
+       Sudo mkfs -t ext3 /dev/sdb 
+• Created mount point and mounted the volume: - 
+       Sudo mkdir /mnt/data-store - 
+       Sudo mount /dev/sdb /mnt/data-store 
+• Configured auto-mount on reboot via /etc/fstab. 
+• Verified mount using df -h. 
+• Created a test file and verified: - 
+      Sudo sh -c “echo some text has been written > /mnt/data-store/file.txt” - 
+      Cat /mnt/data-store/file.txt 
+
+Task 5 — Creating an EBS Snapshot 
+• Created a snapshot of My Volume and named it My Snapshot. 
+• Snapshots stored in S3 for durability. 
+• Deleted the test file on the volume to simulate data loss. 
+
+Task 6 — Restoring the Snapshot 
+1. Create a new volume from the snapshot: - 
+       Name: Restored Volume - 
+       Same Availability Zone. 
+2. Attach restored volume to EC2 instance as /dev/sdc. 
+3. Mount restored volume: - 
+       Sudo mkdir /mnt/data-store2 - 
+       Sudo mount /dev/sdc /mnt/data-store2 
+4. Verified restored file exists: - 
+       Ls /mnt/data-store2/file.txt 
+
+✅ Results 
+• Successfully created and attached EBS volumes. 
+• Mounted volumes with a persistent configuration (fstab). 
+• Took a snapshot and restored a new volume from it. 
+• Verified data restoration and file integrity. 
+
+�
+� Key Takeaways 
+• EBS volumes are block-level storage that can be attached to EC2 instances. 
+• Snapshots provide durable backups and can be restored as new volumes. 
+• Proper mounting and fstab configuration ensures volumes persist across reboots. 
+• EBS snapshots store only used blocks, saving storage space.
