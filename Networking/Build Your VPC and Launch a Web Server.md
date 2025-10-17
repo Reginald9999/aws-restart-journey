@@ -30,8 +30,6 @@ The final architecture will include:
 - 1 Security Group (allowing HTTP access)
 - 1 EC2 instance running Apache Web Server
 
-![image alt](https://github.com/Reginald9999/aws-restart-journey/blob/main/Images/N-images-/lab-1/Screenshot%20(1844).png?raw=true)
-
 ---
 
 ## 🛠️ Tasks
@@ -43,10 +41,7 @@ The final architecture will include:
 - Attach **Internet Gateway**
 - Add **NAT Gateway** for private subnet
 - Configure route tables (Public & Private)
-![image alt](https://github.com/Reginald9999/aws-restart-journey/blob/431841f700a325cc79c5cd8f1fad77f0ad1b46f2/Images/N-images-/lab-1/Screenshot%20(1847).png)
-![image alt](https://github.com/Reginald9999/aws-restart-journey/blob/431841f700a325cc79c5cd8f1fad77f0ad1b46f2/Images/N-images-/lab-1/Screenshot%20(1848).png)
-![image alt](https://github.com/Reginald9999/aws-restart-journey/blob/431841f700a325cc79c5cd8f1fad77f0ad1b46f2/Images/N-images-/lab-1/Screenshot%20(1849).png)
-![image alt](https://github.com/Reginald9999/aws-restart-journey/blob/431841f700a325cc79c5cd8f1fad77f0ad1b46f2/Images/N-images-/lab-1/Screenshot%20(1851).png)
+
 
 
 
@@ -54,16 +49,6 @@ The final architecture will include:
 - Add **Public Subnet 2** (`10.0.2.0/24`)
 - Add **Private Subnet 2** (`10.0.3.0/24`)
 - Associate subnets with route tables
-
-  ![image alt](https://github.com/Reginald9999/aws-restart-journey/blob/02e5df5caf84e1b3cf64c7aa652db92bcf5e4d8f/Images/N-images-/lab-1/Screenshot%20(1852).png)
-  ![image alt](https://github.com/Reginald9999/aws-restart-journey/blob/02e5df5caf84e1b3cf64c7aa652db92bcf5e4d8f/Images/N-images-/lab-1/Screenshot%20(1853).png)
-  ![image alt](https://github.com/Reginald9999/aws-restart-journey/blob/02e5df5caf84e1b3cf64c7aa652db92bcf5e4d8f/Images/N-images-/lab-1/Screenshot%20(1854).png)
-  ![image alt](https://github.com/Reginald9999/aws-restart-journey/blob/02e5df5caf84e1b3cf64c7aa652db92bcf5e4d8f/Images/N-images-/lab-1/Screenshot%20(1855).png)
-  ![image alt](https://github.com/Reginald9999/aws-restart-journey/blob/02e5df5caf84e1b3cf64c7aa652db92bcf5e4d8f/Images/N-images-/lab-1/Screenshot%20(1856).png)
-  ![image alt](https://github.com/Reginald9999/aws-restart-journey/blob/02e5df5caf84e1b3cf64c7aa652db92bcf5e4d8f/Images/N-images-/lab-1/Screenshot%20(1857).png)
-  ![image alt](https://github.com/Reginald9999/aws-restart-journey/blob/02e5df5caf84e1b3cf64c7aa652db92bcf5e4d8f/Images/N-images-/lab-1/Screenshot%20(1858).png)
-  ![image alt](https://github.com/Reginald9999/aws-restart-journey/blob/02e5df5caf84e1b3cf64c7aa652db92bcf5e4d8f/Images/N-images-/lab-1/Screenshot%20(1859).png)
-  ![image alt](https://github.com/Reginald9999/aws-restart-journey/blob/02e5df5caf84e1b3cf64c7aa652db92bcf5e4d8f/Images/N-images-/lab-1/Screenshot%20(1860).png)
 
 
 ### **Task 3: Configure route tables**
