@@ -22,6 +22,8 @@ script.
 
 -   Built an automation script to update website files efficiently.
 
+![image alt](https://github.com/Reginald9999/aws-restart-journey/blob/d246fc15eb86b5e57ffbad82ccaa6f49a3be2ce8/Images/Lab%20Images/Compute/Creating%20Amazon%20EC2%20Instance/Screenshot%20(2274).png)
+
 ## ⚙️ Steps I Took
 
 **Task 1: Connect to EC2 Instance via AWS Systems Manager (SSM)**
