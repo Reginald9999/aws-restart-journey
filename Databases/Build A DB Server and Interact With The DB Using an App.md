@@ -30,61 +30,104 @@ It follows the lab **“Build Your DB Server and Interact With Your DB Using an 
 
 ### **Task 1: Create a Security Group for the RDS DB Instance**
 1. Opened **VPC** in the AWS Console.  
+
 2. Created a new security group named **DB Security Group**.  
-3. Description: *“Permit access from Web Security Group.”*  
-4. Selected **Lab VPC** as the network.  
-5. Added an inbound rule:  
+
+4. Description: *“Permit access from Web Security Group.”*  
+
+5. Selected **Lab VPC** as the network.  
+
+6. Added an inbound rule:  
    - **Type:** MySQL/Aurora (3306)  
    - **Source:** Web Security Group  
-6. Clicked **Create Security Group**.
 
+7. Clicked **Create Security Group**.
+![image alt](https://github.com/Reginald9999/aws-restart-journey/blob/280dcdf4cdb9e4437fffc885bf7f331cbc8f4406/Images/Lab%20Images/Database%20im/Build%20a%20DB%20server/Screenshot%20(2205).png)
+![image alt](https://github.com/Reginald9999/aws-restart-journey/blob/280dcdf4cdb9e4437fffc885bf7f331cbc8f4406/Images/Lab%20Images/Database%20im/Build%20a%20DB%20server/Screenshot%20(2206).png)
 ---
 
 ### **Task 2: Create a DB Subnet Group**
 1. Navigated to **RDS → Subnet Groups**.  
-2. Clicked **Create DB Subnet Group** and named it **DB Subnet Group**.  
-3. Selected **Lab VPC**.  
-4. Added two Availability Zones and their respective subnets:
+![image alt](https://github.com/Reginald9999/aws-restart-journey/blob/280dcdf4cdb9e4437fffc885bf7f331cbc8f4406/Images/Lab%20Images/Database%20im/Build%20a%20DB%20server/Screenshot%20(2208).png)
+![image alt](https://github.com/Reginald9999/aws-restart-journey/blob/280dcdf4cdb9e4437fffc885bf7f331cbc8f4406/Images/Lab%20Images/Database%20im/Build%20a%20DB%20server/Screenshot%20(2210).png)
+
+3. Clicked **Create DB Subnet Group** and named it **DB Subnet Group**.  
+
+4. Selected **Lab VPC**.  
+
+5. Added two Availability Zones and their respective subnets:
    - 10.0.1.0/24 *(Private Subnet 1)*
    - 10.0.3.0/24 *(Private Subnet 2)*  
-5. Clicked **Create**.
-
+6. Clicked **Create**.
+![image alt](https://github.com/Reginald9999/aws-restart-journey/blob/280dcdf4cdb9e4437fffc885bf7f331cbc8f4406/Images/Lab%20Images/Database%20im/Build%20a%20DB%20server/Screenshot%20(2213).png)
+![image alt](https://github.com/Reginald9999/aws-restart-journey/blob/280dcdf4cdb9e4437fffc885bf7f331cbc8f4406/Images/Lab%20Images/Database%20im/Build%20a%20DB%20server/Screenshot%20(2214).png)
+![image alt](https://github.com/Reginald9999/aws-restart-journey/blob/280dcdf4cdb9e4437fffc885bf7f331cbc8f4406/Images/Lab%20Images/Database%20im/Build%20a%20DB%20server/Screenshot%20(2215).png)
 ---
 
 ### **Task 3: Create a Multi-AZ Amazon RDS DB Instance**
 1. Navigated to **RDS → Databases → Create Database**.  
-2. Chose **Standard Create → MySQL → Dev/Test template**.  
-3. Set **Multi-AZ DB Instance** for high availability.  
-4. Configured:
+![image alt](https://github.com/Reginald9999/aws-restart-journey/blob/280dcdf4cdb9e4437fffc885bf7f331cbc8f4406/Images/Lab%20Images/Database%20im/Build%20a%20DB%20server/Screenshot%20(2216).png)
+
+3. Chose **Standard Create → MySQL → Dev/Test template**.  
+![image alt](https://github.com/Reginald9999/aws-restart-journey/blob/280dcdf4cdb9e4437fffc885bf7f331cbc8f4406/Images/Lab%20Images/Database%20im/Build%20a%20DB%20server/Screenshot%20(2218).png)
+
+5. Set **Multi-AZ DB Instance** for high availability.  
+![image alt](https://github.com/Reginald9999/aws-restart-journey/blob/280dcdf4cdb9e4437fffc885bf7f331cbc8f4406/Images/Lab%20Images/Database%20im/Build%20a%20DB%20server/Screenshot%20(2221).png)
+
+7. Configured:
    - **DB Instance Identifier:** lab-db  
    - **Master Username:** main  
-   - **Password:** lab-password  
+   - **Password:** lab-password
+![image alt](https://github.com/Reginald9999/aws-restart-journey/blob/280dcdf4cdb9e4437fffc885bf7f331cbc8f4406/Images/Lab%20Images/Database%20im/Build%20a%20DB%20server/Screenshot%20(2222).png)
    - **Instance Class:** db.t3.medium  
    - **Storage Type:** General Purpose (SSD)  
-5. Under Connectivity:
-   - Selected **Lab VPC**  
-   - Used existing **DB Security Group**  
+[![image alt](https://github.com/Reginald9999/aws-restart-journey/blob/280dcdf4cdb9e4437fffc885bf7f331cbc8f4406/Images/Lab%20Images/Database%20im/Build%20a%20DB%20server/Screenshot%20(2223).png)
+
+8. Under Connectivity:
+   - Selected **Lab VPC**
+![image alt](https://github.com/Reginald9999/aws-restart-journey/blob/280dcdf4cdb9e4437fffc885bf7f331cbc8f4406/Images/Lab%20Images/Database%20im/Build%20a%20DB%20server/Screenshot%20(2224).png)
+   - Used existing **DB Security Group**
+![image alt](https://github.com/Reginald9999/aws-restart-journey/blob/280dcdf4cdb9e4437fffc885bf7f331cbc8f4406/Images/Lab%20Images/Database%20im/Build%20a%20DB%20server/Screenshot%20(2226).png)
    - Disabled Enhanced Monitoring & Automated Backups (for lab speed)  
    - **Initial Database Name:** lab  
-6. Clicked **Create Database**.  
-7. Waited for the instance status to become **Available**.  
-8. Copied the **Endpoint** from *Connectivity & Security* for later use.
+![image alt](https://github.com/Reginald9999/aws-restart-journey/blob/280dcdf4cdb9e4437fffc885bf7f331cbc8f4406/Images/Lab%20Images/Database%20im/Build%20a%20DB%20server/Screenshot%20(2227).png)
 
+
+9. Clicked **Create Database**.  
+![image alt](https://github.com/Reginald9999/aws-restart-journey/blob/280dcdf4cdb9e4437fffc885bf7f331cbc8f4406/Images/Lab%20Images/Database%20im/Build%20a%20DB%20server/Screenshot%20(2229).png)
+
+11. Waited for the instance status to become **Available**.  
+
+12. Copied the **Endpoint** from *Connectivity & Security* for later use.
+![image alt](https://github.com/Reginald9999/aws-restart-journey/blob/280dcdf4cdb9e4437fffc885bf7f331cbc8f4406/Images/Lab%20Images/Database%20im/Build%20a%20DB%20server/Screenshot%20(2233).png)
 ---
 
 ### **Task 4: Interact With the Database Using the Web App**
 1. Copied the **Web Server IP Address** from AWS details.  
 2. Opened it in a browser — the **web app loaded successfully**.  
-3. Clicked the **RDS** link in the app menu.  
-4. Entered database connection info:
+![image alt](https://github.com/Reginald9999/aws-restart-journey/blob/280dcdf4cdb9e4437fffc885bf7f331cbc8f4406/Images/Lab%20Images/Database%20im/Build%20a%20DB%20server/Screenshot%20(2234).png)
+
+4. Clicked the **RDS** link in the app menu.  
+![image alt](https://github.com/Reginald9999/aws-restart-journey/blob/280dcdf4cdb9e4437fffc885bf7f331cbc8f4406/Images/Lab%20Images/Database%20im/Build%20a%20DB%20server/Screenshot%20(2235).png)
+
+6. Entered database connection info:
    - **Endpoint:** (from RDS)
    - **Database:** lab
    - **Username:** main
    - **Password:** lab-password  
-5. Clicked **Submit**.  
-6. Verified the **Address Book app** loaded and stored contact data in the RDS instance.  
-7. Tested **CRUD operations** (add, edit, delete).  
-8. Confirmed data persisted and replicated across Availability Zones.
+![image alt](https://github.com/Reginald9999/aws-restart-journey/blob/280dcdf4cdb9e4437fffc885bf7f331cbc8f4406/Images/Lab%20Images/Database%20im/Build%20a%20DB%20server/Screenshot%20(2236).png)
+
+7. Clicked **Submit**.  
+![image alt](https://github.com/Reginald9999/aws-restart-journey/blob/280dcdf4cdb9e4437fffc885bf7f331cbc8f4406/Images/Lab%20Images/Database%20im/Build%20a%20DB%20server/Screenshot%20(2237).png)
+
+9. Could not verify the **Address Book app** loaded and stored contact data in the RDS instance.  
+
+
+11. Could not Test **CRUD operations** (add, edit, delete).  
+
+
+13. Could not confirm data persisted and replicated across Availability Zones.
+
 
 ---
 
