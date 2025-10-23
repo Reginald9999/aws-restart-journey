@@ -94,9 +94,9 @@ script.
 ![image alt](https://github.com/Reginald9999/aws-restart-journey/blob/d5918507cb159d3235f004c7cd11adabfb3d08d4/Images/Lab%20Images/Compute/Creating%20Amazon%20EC2%20Instance/Screenshot%20(2290).png) ![image alt](https://github.com/Reginald9999/aws-restart-journey/blob/d5918507cb159d3235f004c7cd11adabfb3d08d4/Images/Lab%20Images/Compute/Creating%20Amazon%20EC2%20Instance/Screenshot%20(2292).png) ![image alt](https://github.com/Reginald9999/aws-restart-journey/blob/d5918507cb159d3235f004c7cd11adabfb3d08d4/Images/Lab%20Images/Compute/Creating%20Amazon%20EC2%20Instance/Screenshot%20(2294).png)
 ![image alt](https://github.com/Reginald9999/aws-restart-journey/blob/d5918507cb159d3235f004c7cd11adabfb3d08d4/Images/Lab%20Images/Compute/Creating%20Amazon%20EC2%20Instance/Screenshot%20(2295).png) ![image alt](https://github.com/Reginald9999/aws-restart-journey/blob/d5918507cb159d3235f004c7cd11adabfb3d08d4/Images/Lab%20Images/Compute/Creating%20Amazon%20EC2%20Instance/Screenshot%20(2296).png) 
     -   Enabled ACLs under Object Ownership.
-![image alt]() ![image alt](https://github.com/Reginald9999/aws-restart-journey/blob/f3cc7d978cbd3561d901885d2ee58243815c5b91/Images/Lab%20Images/Compute/Creating%20Amazon%20EC2%20Instance/Screenshot%20(2297).png)
-![image alt]() ![image alt](https://github.com/Reginald9999/aws-restart-journey/blob/f3cc7d978cbd3561d901885d2ee58243815c5b91/Images/Lab%20Images/Compute/Creating%20Amazon%20EC2%20Instance/Screenshot%20(2300).png)
-![image alt]() ![image alt](https://github.com/Reginald9999/aws-restart-journey/blob/f3cc7d978cbd3561d901885d2ee58243815c5b91/Images/Lab%20Images/Compute/Creating%20Amazon%20EC2%20Instance/Screenshot%20(2301).png)
+![image alt](https://github.com/Reginald9999/aws-restart-journey/blob/f3cc7d978cbd3561d901885d2ee58243815c5b91/Images/Lab%20Images/Compute/Creating%20Amazon%20EC2%20Instance/Screenshot%20(2297).png)
+![image alt](https://github.com/Reginald9999/aws-restart-journey/blob/f3cc7d978cbd3561d901885d2ee58243815c5b91/Images/Lab%20Images/Compute/Creating%20Amazon%20EC2%20Instance/Screenshot%20(2300).png)
+![image alt](https://github.com/Reginald9999/aws-restart-journey/blob/f3cc7d978cbd3561d901885d2ee58243815c5b91/Images/Lab%20Images/Compute/Creating%20Amazon%20EC2%20Instance/Screenshot%20(2301).png)
     -   Saved and confirmed changes to allow public website hosting.
 ![image alt](https://github.com/Reginald9999/aws-restart-journey/blob/f3cc7d978cbd3561d901885d2ee58243815c5b91/Images/Lab%20Images/Compute/Creating%20Amazon%20EC2%20Instance/Screenshot%20(2302).png)
 
