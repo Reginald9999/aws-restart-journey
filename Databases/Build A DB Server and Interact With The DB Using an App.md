@@ -12,7 +12,9 @@ It follows the lab **“Build Your DB Server and Interact With Your DB Using an 
 - Create a **DB Subnet Group** to define private subnets  
 - Connect a **web server application** to the RDS instance  
 - Interact with the database via a **live web interface**
+![image alt](https://github.com/Reginald9999/aws-restart-journey/blob/1d862815739bc24cfdc57c0c3c94328564e4cf49/Images/Lab%20Images/Database%20im/Build%20a%20DB%20server/Screenshot%20(2199).png)
 
+![image alt](https://github.com/Reginald9999/aws-restart-journey/blob/1d862815739bc24cfdc57c0c3c94328564e4cf49/Images/Lab%20Images/Database%20im/Build%20a%20DB%20server/Screenshot%20(2200).png)
 ---
 
 ## ☁️ AWS Services Used
