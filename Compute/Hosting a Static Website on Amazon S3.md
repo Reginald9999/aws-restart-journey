@@ -42,6 +42,7 @@ script.
 
     -   *[pwd]{.underline}*
 ![image alt](https://github.com/Reginald9999/aws-restart-journey/blob/d5918507cb159d3235f004c7cd11adabfb3d08d4/Images/Lab%20Images/Compute/Creating%20Amazon%20EC2%20Instance/Screenshot%20(2275).png)
+
 **Task 2: Configure AWS CLI**
 
 -   Configured the AWS CLI with credentials and region:
@@ -61,6 +62,7 @@ script.
 ![image alt](https://github.com/Reginald9999/aws-restart-journey/blob/d5918507cb159d3235f004c7cd11adabfb3d08d4/Images/Lab%20Images/Compute/Creating%20Amazon%20EC2%20Instance/Screenshot%20(2277).png)
 -   Verified bucket creation from the JSON output.
 ![image alt](https://github.com/Reginald9999/aws-restart-journey/blob/d5918507cb159d3235f004c7cd11adabfb3d08d4/Images/Lab%20Images/Compute/Creating%20Amazon%20EC2%20Instance/Screenshot%20(2278).png)
+
 **Task 4: Create and Configure an IAM User**
 
 -   Created a new IAM user:
@@ -83,6 +85,7 @@ script.
 ![image alt](https://github.com/Reginald9999/aws-restart-journey/blob/d5918507cb159d3235f004c7cd11adabfb3d08d4/Images/Lab%20Images/Compute/Creating%20Amazon%20EC2%20Instance/Screenshot%20(2285).png)
 -   Logged in as awsS3user to verify access permissions.
 ![image alt](https://github.com/Reginald9999/aws-restart-journey/blob/d5918507cb159d3235f004c7cd11adabfb3d08d4/Images/Lab%20Images/Compute/Creating%20Amazon%20EC2%20Instance/Screenshot%20(2288).png)
+
 **Task 5: Adjust S3 Bucket Permissions**
 
 -   In the S3 console:
@@ -91,13 +94,14 @@ script.
 ![image alt](https://github.com/Reginald9999/aws-restart-journey/blob/d5918507cb159d3235f004c7cd11adabfb3d08d4/Images/Lab%20Images/Compute/Creating%20Amazon%20EC2%20Instance/Screenshot%20(2290).png) ![image alt](https://github.com/Reginald9999/aws-restart-journey/blob/d5918507cb159d3235f004c7cd11adabfb3d08d4/Images/Lab%20Images/Compute/Creating%20Amazon%20EC2%20Instance/Screenshot%20(2292).png) ![image alt](https://github.com/Reginald9999/aws-restart-journey/blob/d5918507cb159d3235f004c7cd11adabfb3d08d4/Images/Lab%20Images/Compute/Creating%20Amazon%20EC2%20Instance/Screenshot%20(2294).png)
 ![image alt](https://github.com/Reginald9999/aws-restart-journey/blob/d5918507cb159d3235f004c7cd11adabfb3d08d4/Images/Lab%20Images/Compute/Creating%20Amazon%20EC2%20Instance/Screenshot%20(2295).png) ![image alt](https://github.com/Reginald9999/aws-restart-journey/blob/d5918507cb159d3235f004c7cd11adabfb3d08d4/Images/Lab%20Images/Compute/Creating%20Amazon%20EC2%20Instance/Screenshot%20(2296).png) 
     -   Enabled ACLs under Object Ownership.
-![image alt]() ![image alt]()
-![image alt]() ![image alt]()
-![image alt]() ![image alt]()
+![image alt]() ![image alt](https://github.com/Reginald9999/aws-restart-journey/blob/f3cc7d978cbd3561d901885d2ee58243815c5b91/Images/Lab%20Images/Compute/Creating%20Amazon%20EC2%20Instance/Screenshot%20(2297).png)
+![image alt]() ![image alt](https://github.com/Reginald9999/aws-restart-journey/blob/f3cc7d978cbd3561d901885d2ee58243815c5b91/Images/Lab%20Images/Compute/Creating%20Amazon%20EC2%20Instance/Screenshot%20(2300).png)
+![image alt]() ![image alt](https://github.com/Reginald9999/aws-restart-journey/blob/f3cc7d978cbd3561d901885d2ee58243815c5b91/Images/Lab%20Images/Compute/Creating%20Amazon%20EC2%20Instance/Screenshot%20(2301).png)
     -   Saved and confirmed changes to allow public website hosting.
-![image alt]() ![image alt]()
-![image alt]() ![image alt]()
-![image alt]() ![image alt]()
+![image alt](https://github.com/Reginald9999/aws-restart-journey/blob/f3cc7d978cbd3561d901885d2ee58243815c5b91/Images/Lab%20Images/Compute/Creating%20Amazon%20EC2%20Instance/Screenshot%20(2302).png)
+
+
+
 **Task 6: Extract Website Files**
 
 -   Extracted the provided website files:
@@ -111,6 +115,7 @@ script.
     -   *[ls]{.underline}*
 
 -   Verified the presence of index.html, css/, and images/ folders.
+![image alt](https://github.com/Reginald9999/aws-restart-journey/blob/f3cc7d978cbd3561d901885d2ee58243815c5b91/Images/Lab%20Images/Compute/Creating%20Amazon%20EC2%20Instance/Screenshot%20(2304).png) 
 
 **Task 7: Upload Files to S3 and Enable Website Hosting**
 
@@ -127,8 +132,10 @@ script.
 -   Verified files uploaded successfully:
 
     -   *[aws s3 ls \<my-bucket\>]{.underline}*
-
+![image alt](https://github.com/Reginald9999/aws-restart-journey/blob/f3cc7d978cbd3561d901885d2ee58243815c5b91/Images/Lab%20Images/Compute/Creating%20Amazon%20EC2%20Instance/Screenshot%20(2309).png)
 -   Opened the Bucket Website Endpoint URL to confirm the site was live.
+![image alt](https://github.com/Reginald9999/aws-restart-journey/blob/f3cc7d978cbd3561d901885d2ee58243815c5b91/Images/Lab%20Images/Compute/Creating%20Amazon%20EC2%20Instance/Screenshot%20(2313).png)
+
 
 **Task 8: Automate Website Updates**
 
@@ -137,7 +144,7 @@ script.
     -   *[touch update-website.sh]{.underline}*
 
     -   *[vi update-website.sh]{.underline}*
-
+![image alt](https://github.com/Reginald9999/aws-restart-journey/blob/f3cc7d978cbd3561d901885d2ee58243815c5b91/Images/Lab%20Images/Compute/Creating%20Amazon%20EC2%20Instance/Screenshot%20(2318).png) 
 -   Added the following content:
 
     -   *[#!/bin/bash]{.underline}*
@@ -145,7 +152,7 @@ script.
     -   *[aws s3 cp /home/ec2-user/sysops-activity-files/static-website/
         s3://\<my-bucket\>/ \--recursive \--acl
         public-read]{.underline}*
-
+![image alt](https://github.com/Reginald9999/aws-restart-journey/blob/f3cc7d978cbd3561d901885d2ee58243815c5b91/Images/Lab%20Images/Compute/Creating%20Amazon%20EC2%20Instance/Screenshot%20(2320).png) 
 -   Made the script executable:
 
     -   chmod +x update-website.sh
@@ -155,16 +162,8 @@ script.
     -   ./update-website.sh
 
 -   Verified changes reflected on the live website.
+![image alt](https://github.com/Reginald9999/aws-restart-journey/blob/f3cc7d978cbd3561d901885d2ee58243815c5b91/Images/Lab%20Images/Compute/Creating%20Amazon%20EC2%20Instance/Screenshot%20(2323).png) 
 
-## Optional Challenge
-
--   Replaced the cp command with the more efficient sync command:
-
-    -   *[aws s3 sync
-        /home/ec2-user/sysops-activity-files/static-website/
-        s3://\<my-bucket\>/ \--acl public-read]{.underline}*
-
--   This command only updated modified files, saving time and bandwidth.
 
 ## ✅ Outcome
 
